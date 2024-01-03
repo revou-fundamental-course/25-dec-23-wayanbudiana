@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Katiga - Kalkulasi Segitiga</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">KATIGA</div>
+                <div class="menu">
+                    <ul>
+                        <li><a onclick = "selectContent('content-1')">LUAS SEGITIGA</a></li>
+                        <li><a onclick = "selectContent('content-2')">KELILING SEGITIGA</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="hero">
+                <div class="we">
+                    <h1>Welcome to KATIGA</h1>
+                    <p>Website Kalkulasi Segitiga Cara Mudah Hitung Luas dan Keliling Segitiga</p>
+                </div>
+                <div>
+                    <div class="triangle"></div>
+                    <div class="lurus"></div>
+                    <div class="satu">A</div>
+                    <div class="dua">B</div>
+                    <div class="tiga">C</div>
+                    <div class="empat">t</div>
+                    <div class="lima">a</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="content-1" class="content tampil">
+        <div class="container ">
+            <div id="tab-1-content" class="left show">
+                <h3>Rumus Luas Segitiga Yaitu:</h3>
+                <span>L = 1/2 x a x t</span>
+                <span>Dimana :</span>
+                <table>
+                    <tr>
+                        <td>L</td>
+                        <td>=</td>
+                        <td>Luas</td>
+                    </tr>
+                    <tr>
+                        <td>a</td>
+                        <td>=</td>
+                        <td>Panjang Alas</td>
+                    </tr>
+                    <tr>
+                        <td>t</td>
+                        <td>=</td>
+                        <td>Tinggi</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="tab-2-content" class="left">
+                <h3>Berikut adalah Luas Segitiga:</h3>
+                <span id="resultText">L = 1/2 x <span id="inputA"></span> x <span id="inputT"></span></span>
+                <span>Jadi Hasilnya adalah : <strong id="resultValue"></strong></span>
+            </div>
+
+            <div class="right">
+                <h3>Silahkan Masukan Data Dibawah:</h3>
+                <div>
+                    <input id="inputAlas" type="number" placeholder="Panjang Alas Segitiga">
+                    <input id="inputTinggi" type="number" placeholder="Tinggi Segitiga">
+                </div>
+                <div class="btn">
+                    <button onclick="hitungTab()" class="btn btn-submit">HITUNG</button>
+                    <button onclick="resetTab()" class="btn btn-submit">RESET</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="content-2" class="content">
+        <div class="container ">
+            <div id="tab-3-content" class="left show">
+                <h3>Rumus Keliling Segitiga Yaitu:</h3>
+                <span>K = S1 + S2 + S3</span>
+                <span>Dimana :</span>
+                <table>
+                    <tr>
+                        <td>K</td>
+                        <td>=</td>
+                        <td>Keliling</td>
+                    </tr>
+                    <tr>
+                        <td>S1</td>
+                        <td>=</td>
+                        <td>Sisi A</td>
+                    </tr>
+                    <tr>
+                        <td>S2</td>
+                        <td>=</td>
+                        <td>Sisi B</td>
+                    </tr>
+                    <tr>
+                        <td>S3</td>
+                        <td>=</td>
+                        <td>Sisi C</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="tab-4-content" class="left">
+                <h3>Berikut adalah Keliling Segitiga:</h3>
+                <span id="resultTextK">K = <span id="InputsisiA"></span> + <span id="InputsisiB"></span> + <span id="InputsisiC"></span></span>
+                <span>Jadi Hasilnya adalah : <strong id="resultValueK"></strong></span>
+            </div>
+
+            <div class="right">
+                <h3>Silahkan Masukan Data Dibawah:</h3>
+                <div>
+                    <input id="sisiA" type="number" placeholder="Panjang Sisi A">
+                    <input id="sisiB" type="number" placeholder="Panjang Sisi B">
+                    <input id="sisiC" type="number" placeholder="Panjang Sisi C">
+                </div>
+                <div class="btn">
+                    <button onclick="hitungKeliling()" class="btn btn-submit">HITUNG</button>
+                    <button onclick="resetTabK()" class="btn btn-submit">RESET</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <span>Created by I Wayan Budiana</span>
+        </div>
+    </footer>
+
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
